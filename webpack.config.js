@@ -1,9 +1,10 @@
 const path = require('path');
+const SRC_PATH = path.resolve(__dirname, 'build/scripts');
 
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
-    path: path.resolve(__dirname, 'build/scripts'),
+    path: SRC_PATH,
     filename: 'main.js'
   },
   module: {
